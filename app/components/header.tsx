@@ -3,7 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import SheetDemo from './sheet'
-
+import Image from 'next/image'
 const Header = () => {
    const pathname = usePathname()
    const getButtonClass = (path: string) => {
@@ -16,8 +16,10 @@ const Header = () => {
     <>
     <header className='flex justify-between items-center px-4 py-2 p md:p-8'>
      
-     <Link href='/'>
+     <Link href='/' className='flex items-center gap-2'>
+     <Image src='/assets/logo.svg' width={30} height={30} alt='' />
      <p className="text-white font-bold  lg:text-2xl">Denovan</p>
+   
      </Link>
 
      <SheetDemo />
