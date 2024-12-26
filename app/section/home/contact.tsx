@@ -1,6 +1,7 @@
 import React from 'react'
 import Headline from '../../components/headline'
 import CopyToClipboard from '@/components/ui/copy-to-clipboard'
+import EditForm from '@/app/components/editForm'
 
 
 
@@ -38,8 +39,12 @@ const Contact = () => {
                     </div>
                     
                 </div>
-                
-            </section>
+                   <div className='flex gap-2 items-center'> <p className=' text-3xl text-[#C778DD]'>#</p>
+                        <h1 className='text-3xl text-white'>contact-me</h1></div>
+                            <EditForm/>
+                    
+           </section>
+            
     </>
   )
 }

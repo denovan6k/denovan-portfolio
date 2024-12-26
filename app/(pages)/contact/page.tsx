@@ -18,7 +18,7 @@ const Contact = () => {
 
     <div className='flex flex-col motion-preset-slide-up bg-[#282C33] gap-5 md:gap-8 p-4 md:p-8 lg:p-12 min-h-screen'>
 
-        <BreadCrumbs path='contacts' description='Who am i?'/>
+        <BreadCrumbs path='contact' description='Want to collaborate?'/>
         <section className='flex flex-col gap-8'>
               
                 <div className='md:flex-row flex flex-col gap-4  justify-between'>

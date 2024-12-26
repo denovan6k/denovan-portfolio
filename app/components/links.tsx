@@ -32,7 +32,7 @@ const Linx = () => {
         </li>
         <li className=''>
            <Link href='/contact'>
-           <p className={`${getButtonClass('/contact')} hover:text-white `}> <span className='text-[#C778DD]'> # </span> contacts </p>
+           <p className={`${getButtonClass('/contact')} hover:text-white `}> <span className='text-[#C778DD]'> # </span> contact </p>
            </Link>
         </li>
      </ul>
