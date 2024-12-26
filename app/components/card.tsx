@@ -35,6 +35,7 @@ const Card = () => {
     </Button>
    
     <Button variant='outline' className='px-[16px] py-[8px] border-[#C778DD]  text-[#ABB2BF] bg-[#282C33] rounded-none' asChild>
+      
     <Link href={item.github} > Github &gt;=  </Link>  
     </Button>
         </li>

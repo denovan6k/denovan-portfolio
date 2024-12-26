@@ -52,4 +52,12 @@ export const CardData :CardDat[] =[
     image: '/assets/coinmarket.svg',
     link: 'https://coin-market-cap-ashen.vercel.app/',
     github: 'https://github.com/denovan6k/CoinMarketCap'
+},
+{
+    language: 'Next JS, Typescript, Zustand, Shadcn, Tailwind CSS, ',
+    title: 'Sabi Movie',
+    description: 'Discover the latest movies and trending titles on our sleek, user-friendly platform built with Next.js, TypeScript, and Zustand for seamless data management and performance. Explore, search, and stay updated with real-time information on all your favorite films.',
+    image: '/assets/movie.svg',
+    link: 'https://sabimovies.vercel.app/',
+    github: 'https://github.com/denovan6k/Movie_task'
 },]

@@ -13,11 +13,11 @@ const SkillCard = () => {
   return (
     <>
     {skillData.map((item,index)=> (
-         <ul key={index} className='flex flex-col    border border-[#ABB2BF]' data-aos="fade-up">
+         <ul key={index} className='flex flex-col border border-[#ABB2BF]' data-aos="fade-up">
             <li className='p-2 text-white border border-[#ABB2BF] ' >
                  {item.title}
             </li>
-            <li className='p-2 text-[#ABB2BF] text-wrap   '>
+            <li className='p-2 text-[#ABB2BF] text-wrap'>
                  {item.description}
             </li>
 

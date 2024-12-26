@@ -12,12 +12,26 @@ export const skillData : skillDat[] = [{
     title:'Frameworks',
     description: 'Next.js, React, Vite, Express',
 }, {
-    title:'Databases',
-    description: 'MongoDB, MySQL, PostgreSQL',
+    title:'Database Maanagement',
+    description: 'MongoDB, MySQL, PostgreSQL, Firebase, Supabase',
+},
+
+{
+    title:'Utilty',
+    description: 'Tailwind CSS, Rest API, React hook form, Zod, Zustand, Redux, ShadCN, Chakra UI, Tanstack',
 },{
     title:'Tools',
-    description: 'Git, Github, VS Code, Docker, Firebase',
+    description: 'Git, Github, VS Code',
+},
+{
+    title:'Design',
+    description: 'Figma, Dribbble, Canva, Adobe XD, Photoshop, Behance',
+},
+{
+    title:'Cloud',
+    description: 'Docker, kubernetes, GCP',
 },{
-    title:'Others',
+    title:'Utilty',
     description: 'Tailwind CSS, Rest API, React hook form, Zod, Zustand, Redux , ShadCN , Chakra UI, Tanstack',
-}]
+},
+]

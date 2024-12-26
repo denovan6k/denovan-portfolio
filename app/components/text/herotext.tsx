@@ -7,9 +7,9 @@ const HeroText = () => {
   return (
     <>
     <div>
-        <ul className='flex flex-col gap-4 md:gap-8  lg:gap-10 max-w-[530px] text-wrap'>
+        <ul className='flex flex-col gap-6 md:gap-8  lg:gap-10 max-w-[530px] text-wrap'>
             <li className='lg:text-3xl text-xl text-white '>
-            Denovan is a <span className='text-[#C778DD]'> Front-end Engineer </span>
+            Denovan is a <span className='text-[#C778DD]'> Software Engineer </span>
             </li>
             <li className='text-sm text-[#ABB2BF]'>
             <TextGenerateEffect duration={2} filter={false} words={words} className='text-[#ABB2BF] font-normal ' />

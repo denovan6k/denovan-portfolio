@@ -2,6 +2,7 @@ import BreadCrumbs from '@/app/components/breadCrumbs'
 
 import Headline from '@/app/components/headline'
 import MainCard from '@/app/components/mainCard'
+import SmallCard from '@/app/components/small'
 import React from 'react'
 
 const Work = () => {
@@ -23,6 +24,17 @@ const Work = () => {
 
                 </div>
             </section>
+            <section className='flex flex-col gap-8'>
+       
+       <div className='flex gap-2 items-center'> <p className=' text-3xl text-[#C778DD]'>#</p>
+       <h1 className='text-3xl text-white'>Designs</h1></div>
+      
+
+               <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 items-center lg:items-start'>
+                 
+                  <SmallCard/>
+               </div>
+           </section>
     </div>
 
 

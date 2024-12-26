@@ -9,7 +9,10 @@ const Footer = () => {
     <ul className='flex justify-between items-center py-8'>
       <li className='flex flex-col gap-4'>
         <h1 className='text-white text-xl'>Denovan </h1>
-        <p className='text-[#ABB2BF] text-sm'> Denovan.vercel </p>
+        <Link href={'https://denovanport.vercel.app/'}>
+        <p className='text-[#ABB2BF] text-sm'> Denovan.vercel </p>       
+        </Link>
+      
       </li>
       <li className='flex flex-col '>
         <div className='flex flex-col items-center gap-4'>
