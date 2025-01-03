@@ -16,7 +16,7 @@ const Card = () => {
   return (
    <>
 
-   {CardData.slice(0, 3).map((item, index) =>
+   {CardData.map((item, index) =>
           (
         <ul className='flex flex-col border   bg-[#282C33]' key={index} data-aos="fade-up">
         <li>
