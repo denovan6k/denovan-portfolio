@@ -10,9 +10,9 @@ export const skillData : skillDat[] = [{
     description: 'TypeScript, Python, Javascript,  C',
 },{
     title:'Frameworks',
-    description: 'Next.js, React, Vite, Express',
+    description: 'Next.js, React Vite, Express',
 }, {
-    title:'Database Maanagement',
+    title:'Database Management',
     description: 'MongoDB, MySQL, PostgreSQL, Firebase, Supabase',
 },
 

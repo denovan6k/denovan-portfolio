@@ -28,7 +28,7 @@ export const SmallCardData :SmallData[] =[
     {
         language: 'Figma ',
         title: 'InfiCare',
-        description: 'Designed a cutting-edge hospital management system on Figma, combining sleek visuals with user-centric features. The interface streamlines hospital workflows, enabling effortless appointment scheduling and patient record management, ensuring a seamless, efficient experience for healthcare professionals and patients alike',
+        description: 'Designed a cutting-edge hospital management system on Figma, combining sleek visuals with user-centric features. The interface streamlines hospital workflows, enabling effortless appointment scheduling and patient record management, ensuring a seamless, efficient experience for healthcare professionals and patients alike.',
         image: '/assets/hms.svg',
         link: 'https://www.behance.net/gallery/184463097/Real-estate-landing-page',
        

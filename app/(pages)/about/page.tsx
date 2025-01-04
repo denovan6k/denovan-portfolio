@@ -24,7 +24,7 @@ const About = () => {
                         Hello, i’m Ogundu Okechukwu!
                         </li>
                         <li>
-                        I’m a self-taught Software Engineer based in Abuja, Nigeria. I  Develop responsive websites and transform them into modern user-friendly web experiences.
+                        I’m a self-taught Software Engineer. I  Develop responsive websites and transform them into modern user-friendly web experiences.
                         </li>
                         <li>
                         Transforming my creativity and knowledge into a websites has been my passion. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.

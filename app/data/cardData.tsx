@@ -11,7 +11,7 @@ export const CardData :CardDat[] =[
     {
         language: 'React Vite, Typescript, Zustand, Node Js, Shadcn, Tailwind CSS, ',
         title: 'Renergy Hub',
-        description: 'Renergy Hub is an innovative Cleantech web platform designed to address Nigeria’s persistent electric power challenges by empowering users to optimize renewable energy consumption.',
+        description: 'Renergy Hub is an innovative Cleantech web platform designed to address Nigeria’s persistent electric power challenges by empowering users to buy and sell renewable energy products.',
         image: '/assets/renergy.svg',
         link: 'https://www.renergyhub.com.ng/',
         github: 'https://github.com/InternPulse/renergy-hub-frontend'
@@ -19,7 +19,7 @@ export const CardData :CardDat[] =[
     {
     language: 'Next.Js, Typescript, useContext, Firebase, Shadcn, Tailwind CSS, Zod, React hook form ',
     title: 'Devlinks',
-    description: 'Link Sharing app with Authentication, CRUD functionality, each user can create links and share with real-time updates',
+    description: 'Link sharing app with Authentication, CRUD functionality, each user can create links and share with real-time updates.',
     image: '/assets/devlink.svg',
     link: 'https://devlinks-silk-beta.vercel.app/',
     github: 'https://github.com/denovan6k/Devlinks'
@@ -41,7 +41,7 @@ export const CardData :CardDat[] =[
 ,{
     language: 'Next.js, Typescript, Chakra, ShadCN,',
     title: 'Vitalsync (UI)',
-    description: 'A health fitness app dashboard ',
+    description: 'A health fitness app dashboard with responsive design ',
     image: '/assets/healthcare.svg',
     link: 'https://vitalsync.vercel.app/',
     github: 'https://github.com/denovan6k/Vitalsync'
