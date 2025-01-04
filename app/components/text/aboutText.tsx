@@ -5,7 +5,7 @@ const AboutText = () => {
     <>
     <ul className='flex flex-col gap-8 text-[#ABB2BF] max-w-[600px] text-wrap'>
         <li>
-        Hello, i’m Okechukwu Ogundu with alias as Denovan!
+        Hello, i’m Ogundu Okechukwu with alias as Denovan!
         </li>
         <li className=''>
         I’m a self-taught software engineer, specialized in front-end development. I develop responsive websites and transform them into modern user-friendly web experiences.
