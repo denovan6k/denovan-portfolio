@@ -41,7 +41,7 @@ const Hero = () => {
             />
             <div className='mt-6 grid gap-2 rounded-2xl border border-[#2C2F36] bg-[#13161D] p-4'>
               <p className='font-mono text-xs uppercase tracking-[0.28em] text-[#C778DD]'>now crafting</p>
-              <p className='text-lg text-white'>Retro-futuristic product journeys</p>
+              <p className='text-lg text-white'>Retro futuristic product journeys</p>
             </div>
           </div>
         </div>

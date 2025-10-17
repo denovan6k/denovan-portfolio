@@ -11,7 +11,7 @@ const HeroText = () => {
       <div className='space-y-3'>
         <p className='font-mono text-xs uppercase tracking-[0.35em] text-[#ABB2BF]/70'>frontend engineer • product designer</p>
         <h1 className='text-4xl font-semibold leading-[1.05] text-white md:text-5xl lg:text-6xl'>
-          Okechukwu builds <span className='underline decoration-[#C778DD] decoration-[8px] underline-offset-8'>distinctive web worlds</span> for future-facing brands.
+          Okechukwu builds <span className='underline decoration-[#C778DD] decoration-[8px] underline-offset-8'>distinctive web worlds</span> for future facing brands.
         </h1>
       </div>
       <p className='max-w-[560px] text-base leading-relaxed text-[#ABB2BF] md:text-lg'>
