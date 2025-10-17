@@ -1,19 +1,25 @@
 import React from 'react'
+
 type Props = {
-    path: string
-    description?: string
+  path: string
+  description?: string
+  eyebrow?: string
 }
-const BreadCrumbs = ({path,description}: Props) => {
+
+const BreadCrumbs = ({ path, description, eyebrow }: Props) => {
   return (
-    <>
-    <ul className='flex flex-col gap-4'>
-        <li className='flex gap-2 items-center'> <p className=' text-3xl text-[#C778DD]'>./</p>
-        <h1 className='text-3xl text-white'>{path}</h1></li>
-        <li className='text-[#ABB2BF]'>{description}</li>
-        
-    </ul>
-    </>
-    
+    <div className='w-full'>
+      <div className='flex flex-col gap-4 rounded-[28px] border border-[#2C2F36] bg-[#181A23] p-6 shadow-[8px_8px_0px_0px_rgba(199,120,221,0.18)]'>
+        {eyebrow ? (
+          <span className='font-mono text-xs uppercase tracking-[0.35em] text-[#C778DD]'>{eyebrow}</span>
+        ) : null}
+        <div className='flex flex-wrap items-center gap-3 text-white'>
+          <span className='text-2xl text-[#C778DD] md:text-3xl'>./</span>
+          <h1 className='text-2xl font-semibold md:text-3xl'>{path}</h1>
+        </div>
+        {description ? <p className='max-w-[640px] text-sm leading-relaxed text-[#C7CCD9] md:text-base'>{description}</p> : null}
+      </div>
+    </div>
   )
 }
 

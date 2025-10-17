@@ -4,10 +4,33 @@ type CardDat = {
     description: string
     image: string
     link: string
-    github: string
+    github?: string
 }
 
 export const CardData :CardDat[] =[
+          {
+        language: 'Next Js, Typescript, Axios, Tanstack Query, Paystack, Shadcn, Tailwind CSS, ',
+        title: 'Hive Africa 2025',
+        description: 'Master data skills without pausing your career',
+        image: '/assets/hiveafrica2025.svg',
+        link: 'https://hiveafrica2025.vercel.app/',
+    },
+      {
+        language: 'Next Js, Typescript, Next Intl i18n, Tanstack Query, React Maque, Robot Framework, Shadcn, Tailwind CSS, ',
+        title: 'Rescue-it',
+        description: 'Rescue-it is a service platform Which utilizes advanced technology for rebuilding and recovering data from crashed and physically damaged hard drives.',
+        image: '/assets/rescue-it.svg',
+        link: 'https://rescue-it.se/',
+    },
+
+       {
+        language: 'Next Js, Typescript, Tanstack Query, Node Js, Shadcn, Tailwind CSS, ',
+        title: 'Bestdealnaija',
+        description: 'Bestdealnaija is a comprehensive e-commerce platform that connects buyers and sellers, offering a wide range of products and services tailored to the Nigerian market.',
+        image: '/assets/bestdealnaija.svg',
+        link: 'https://www.bestdealnaija.com/',
+        // github: 'https://github.com/InternPulse/bestdealnaija-frontend'
+    },
     {
         language: 'React Vite, Typescript, Zustand, Node Js, Shadcn, Tailwind CSS, ',
         title: 'Renergy Hub',

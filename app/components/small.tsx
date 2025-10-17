@@ -1,45 +1,51 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
-import { SmallCardData } from '../data/smallData'
 import Link from 'next/link'
 import Aos from 'aos'
-import "aos/dist/aos.css";
-import { useEffect } from 'react';
-const SmallCard = () => {
-    useEffect(() => {
-      Aos.init({
-        duration: 1000,
-      });
-    }, []);
-  return (
-   <>
+import 'aos/dist/aos.css'
+import { SmallCardData } from '../data/smallData'
 
-   {SmallCardData.map((item, index) =>
-          (
-        <ul className='flex flex-col border   bg-[#282C33]' key={index} data-aos="fade-up">
-        <li>
-          <Image src={item.image} alt='' width={100} height={100} className='w-full'/>
-        </li>
-        <li className='p-2 border '>
-          <p className='text-[#ABB2BF] text-wrap'>  {item.language} </p>
-        </li>
-        <li className='p-4 flex flex-col gap-4'>
-          <h1 className='text-2xl text-white'> {item.title} </h1>
-          <p className='text-sm text-[#ABB2BF]'> {item.description} </p>
-        </li>
-        <li className='p-4 mb-0'>
-        <Button variant='outline' className='px-[16px] py-[8px] border-[#C778DD] text-[#ABB2BF] bg-[#282C33] rounded-none' asChild >
-    <Link href={item.link} > Demo &lt;~&gt;   </Link> 
-    </Button>
-   
-   
-        </li>
-      </ul>
+const SmallCard = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    })
+  }, [])
+
+  return (
+    <>
+      {SmallCardData.map((item, index) => (
+        <article
+          key={index}
+          className='group relative flex h-full flex-col overflow-hidden rounded-[28px] border border-[#2C2F36] bg-[#161821] text-white shadow-[8px_8px_0px_0px_rgba(199,120,221,0.18)] transition duration-300 hover:-translate-y-2 hover:shadow-[16px_16px_0px_0px_rgba(199,120,221,0.25)]'
+          data-aos='fade-up'
+        >
+          <div className='relative overflow-hidden'>
+            <div className='absolute inset-0 bg-gradient-to-tr from-[#10121A] via-transparent to-[#C778DD]/30 opacity-0 transition-opacity duration-300 group-hover:opacity-60' />
+            <Image src={item.image} alt={`${item.title} preview`} width={720} height={480} className='h-full w-full object-cover' />
+            <div className='pointer-events-none absolute left-4 top-4 inline-flex rounded-full border border-[#C778DD]/60 bg-[#1A1D24]/70 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.4em] text-[#C778DD]'>
+              design study
+            </div>
+          </div>
+          <div className='flex flex-1 flex-col gap-6 p-6'>
+            <div className='space-y-3'>
+              <p className='font-mono text-xs uppercase tracking-[0.3em] text-[#ABB2BF]'>{item.language}</p>
+              <h3 className='text-2xl font-semibold'>{item.title}</h3>
+              <p className='text-sm leading-relaxed text-[#BFC5D4]'>{item.description}</p>
+            </div>
+            <div className='mt-auto flex flex-wrap items-center gap-3 pt-2'>
+              <Link
+                href={item.link}
+                className='inline-flex items-center gap-2 rounded-full border border-[#C778DD] bg-[#1A1D24] px-4 py-2 font-mono text-xs uppercase tracking-[0.3em] text-[#C778DD] transition-colors duration-200 hover:bg-[#C778DD] hover:text-[#08090C]'
+              >
+                view case study <span className='text-base'>↗</span>
+              </Link>
+            </div>
+          </div>
+          <div className='pointer-events-none absolute -right-6 bottom-6 h-14 w-14 rotate-[28deg] border border-dashed border-[#C778DD]/50' />
+        </article>
       ))}
- 
- 
     </>
   )
 }

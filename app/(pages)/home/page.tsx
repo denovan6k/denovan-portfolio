@@ -9,16 +9,13 @@ import Skill from '@/app/section/home/skill'
 import React from 'react'
 
 const Home = () => {
-
   return (
-    <div className=' flex flex-col p-4 md:p-8 lg:p-12 gap-14'> 
-   
-      <Hero/>
-      <Project/>
-      <Skill/>
-      <About/>
-      <Contact/>
-      
+    <div className='relative flex flex-col gap-20 md:gap-24 w-full max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-16 xl:px-20 pt-12 pb-24'>
+      <Hero />
+      <Project />
+      <Skill />
+      <About />
+      <Contact />
     </div>
   )
 }

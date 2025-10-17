@@ -1,26 +1,31 @@
 import React from 'react'
-import { Button } from '@/components/ui/button'
+
 const AboutText = () => {
   return (
-    <>
-    <ul className='flex flex-col gap-8 text-[#ABB2BF] max-w-[600px] text-wrap'>
-        <li>
-        Hello, i’m Ogundu Okechukwu with alias as Denovan!
-        </li>
-        <li className=''>
-        I’m a self-taught software engineer, specialized in front-end development. I develop responsive websites and transform them into modern user-friendly web experiences.
-        </li>
-        <li>
-        Transforming my creativity and knowledge into a websites has been my passion. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.
-        </li>
-        {/* <li> 
-            <Button variant='outline' size='lg' className='border-[#C778DD] px-[16px] py-[8px] rounded-none bg-[#282C33] text-white'>
-            Read More
-            </Button>
-        </li> */}
-    </ul>
-    
-    </>
+    <div className='space-y-8 text-[#C7CCD9]'>
+      <p className='font-mono text-xs uppercase tracking-[0.35em] text-[#C778DD]'>biography</p>
+      <div className='space-y-6 text-base leading-relaxed md:text-lg'>
+        <p>
+          I’m Ogundu Okechukwu most people call me Denovan. I craft expressive web products that live between experimental aesthetics and obsessive usability. My work spans design systems, web apps, and story driven interactions for founders, startups, and forward thinking teams.
+        </p>
+        <p>
+          With roots in engineering and a love for brutalist-inspired art direction, I build experiences that feel tactile, bold, and future ready. Each collaboration is grounded in research, motion, and systems thinking so products scale without losing their soul.
+        </p>
+        <p>
+          Currently designing and shipping digital experiences for global clients, while exploring new frontiers in creative tooling, accessibility, and immersive web narratives.
+        </p>
+      </div>
+      <div className='grid gap-4 md:grid-cols-2'>
+        <div className='rounded-2xl border border-[#2C2F36] bg-[#191B24] p-4 shadow-[6px_6px_0px_0px_rgba(199,120,221,0.16)]'>
+          <p className='font-mono text-xs uppercase tracking-[0.32em] text-[#ABB2BF]'>working with</p>
+          <p className='pt-2 text-sm text-white'>Design led startups, product studios, and ambitious founders building what’s next.</p>
+        </div>
+        <div className='rounded-2xl border border-[#2C2F36] bg-[#191B24] p-4 shadow-[6px_6px_0px_0px_rgba(199,120,221,0.16)]'>
+          <p className='font-mono text-xs uppercase tracking-[0.32em] text-[#ABB2BF]'>based in</p>
+          <p className='pt-2 text-sm text-white'>Abuja, Nigeria • collaborating remotely worldwide.</p>
+        </div>
+      </div>
+    </div>
   )
 }
 
