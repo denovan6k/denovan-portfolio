@@ -65,7 +65,7 @@ export default {
   		}
   	}
   },
-  plugins: [(require("tailwindcss-animate"), (addVariablesForColors), require('tailwindcss-motion'))],
+  plugins: [require("tailwindcss-animate"), addVariablesForColors],
 } satisfies Config;
 
 function addVariablesForColors({ addBase, theme }: any) {

@@ -1,11 +1,15 @@
+'use client'
+
 import React from 'react'
 import Headline from '../../components/headline'
 import CopyToClipboard from '@/components/ui/copy-to-clipboard'
 import EditForm from '@/app/components/editForm'
+import { FadeIn } from '../../components/animations/FadeIn'
 
 const Contact = () => {
   return (
-    <section className='relative overflow-hidden rounded-[32px] border border-[#2C2F36] bg-[#11131A] px-6 py-12 text-white shadow-[10px_10px_0px_0px_rgba(199,120,221,0.16)] md:px-12'>
+    <FadeIn duration={0.6} direction='up'>
+      <section className='relative overflow-hidden rounded-[32px] border border-[#2C2F36] bg-[#11131A] px-6 py-12 text-white shadow-[10px_10px_0px_0px_rgba(199,120,221,0.16)] md:px-12'>
       <div className='pointer-events-none absolute inset-0'>
         <div className='absolute -left-12 bottom-10 h-48 w-48 rounded-[24px] border border-[#2C2F36]/70 bg-[#1A1D24]/70' />
         <div className='absolute -top-14 right-14 h-40 w-40 rounded-full bg-[#C778DD]/20 blur-2xl' />
@@ -46,7 +50,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+    </FadeIn>
   )
 }
 

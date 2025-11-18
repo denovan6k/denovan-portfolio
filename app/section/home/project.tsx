@@ -2,10 +2,12 @@
 
 import Headline from '../../components/headline'
 import Card from '../../components/card'
+import { FadeIn } from '../../components/animations/FadeIn'
 
 const Project = () => {
   return (
-    <section className='relative overflow-hidden rounded-[32px] border border-[#2C2F36] bg-[#12131A] px-6 py-12 text-white shadow-[10px_10px_0px_0px_rgba(199,120,221,0.16)] md:px-12'>
+    <FadeIn duration={0.6} direction='up'>
+      <section className='relative overflow-hidden rounded-[32px] border border-[#2C2F36] bg-[#12131A] px-6 py-12 text-white shadow-[10px_10px_0px_0px_rgba(199,120,221,0.16)] md:px-12'>
       <div className='pointer-events-none absolute inset-0'>
         <div className='absolute -right-16 top-10 h-40 w-40 rounded-full border border-dashed border-[#C778DD]/50' />
         <div className='absolute -bottom-20 left-10 h-56 w-56 rounded-[32px] border border-[#2C2F36]/70 bg-[#1A1D24]/60' />
@@ -27,7 +29,8 @@ const Project = () => {
           <Card />
         </div>
       </div>
-    </section>
+      </section>
+    </FadeIn>
   )
 }
 

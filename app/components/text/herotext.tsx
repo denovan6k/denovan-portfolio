@@ -14,9 +14,9 @@ const HeroText = () => {
           Okechukwu builds <span className='underline decoration-[#C778DD] decoration-[8px] underline-offset-8'>distinctive web worlds</span> for future facing brands.
         </h1>
       </div>
-      <p className='max-w-[560px] text-base leading-relaxed text-[#ABB2BF] md:text-lg'>
+      <div className='max-w-[560px] text-base leading-relaxed text-[#ABB2BF] md:text-lg'>
         <TextGenerateEffect duration={2} filter={false} words={words} className='text-[#ABB2BF] font-normal' />
-      </p>
+      </div>
       <div className='flex flex-wrap items-center gap-4'>
         <Link href='/contact'>
           <HoverBorderGradient

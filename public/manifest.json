@@ -1,0 +1,18 @@
+{
+  "name": "Denovan - Frontend Engineer & Product Designer",
+  "short_name": "Denovan",
+  "description": "Portfolio of Ogundu Okechukwu (Denovan) - Frontend Engineer & Product Designer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#282C33",
+  "theme_color": "#C778DD",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

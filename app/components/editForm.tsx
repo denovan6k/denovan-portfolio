@@ -58,7 +58,7 @@ export default function EditForm() {
         <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(handleSubmit)}
-                className=" w-full max-w-md space-y-4 "
+                className="w-full space-y-4 "
               >
               
 
