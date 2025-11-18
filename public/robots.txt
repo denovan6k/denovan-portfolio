@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://denovan.dev/sitemap.xml
+Sitemap: https://denovanport.vercel.app/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 0

@@ -21,14 +21,14 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://denovanport.vercel.app/work'),
+  metadataBase: new URL('https://denovanport.vercel.app'),
   title: {
     default: 'Denovan - Frontend Engineer & Product Designer',
     template: '%s | Denovan'
   },
   description: "Translating Design problems into high impact applications. Frontend engineer and product designer crafting expressive, neo-brutalist web experiences.",
-  keywords: ['Denovan', 'Ogundu Okechukwu', 'frontend engineer', 'product designer', 'web developer', 'UI/UX', 'React', 'Next.js', 'TypeScript', 'design systems', 'canada',  'Abuja Nigeria'],
-  authors: [{ name: 'Ogundu Okechukwu (Denovan)', url: 'https://denovanport.vercel.app/work' }],
+  keywords: ['Denovan', 'Ogundu Okechukwu', 'frontend engineer', 'product designer', 'web developer', 'UI/UX', 'React', 'Next.js', 'TypeScript', 'design systems', 'Abuja Nigeria'],
+  authors: [{ name: 'Ogundu Okechukwu (Denovan)', url: 'https://denovanport.vercel.app' }],
   creator: 'Ogundu Okechukwu (Denovan)',
   publisher: 'Denovan',
   formatDetection: {

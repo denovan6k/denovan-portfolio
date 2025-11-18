@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Denovan - Frontend Engineer & Product Designer',
     description: 'Building distinctive web worlds for future-facing brands. Expressive aesthetics meet meticulous, user-centered systems.',
-    url: 'https://denovan.dev',
+    url: 'https://denovanport.vercel.app',
     siteName: 'Denovan Portfolio',
     images: [
       {
