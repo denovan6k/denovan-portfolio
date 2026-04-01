@@ -8,9 +8,30 @@ type CardDat = {
 }
 
 export const CardData :CardDat[] =[
+    {
+        language: 'Next.js, Typescript, Tailwind CSS, ShadCN, Zustand, REST API',
+        title: 'LudaCards',
+        description: 'LudaCards is an agile SaaS platform that empowers teams to collaborate, plan, and manage workflows using interactive card-based agile boards — streamlining sprints and boosting team productivity.',
+        image: '/assets/ludacards.png',
+        link: 'https://ludacards.com/',
+    },
+    {
+        language: 'Next.js, Typescript, Node.js, Tailwind CSS, ShadCN, PostgreSQL, REST API',
+        title: 'Yodelt',
+        description: 'Yodelt is a forward-thinking IT company specializing in building scalable, robust enterprise software solutions — delivering end-to-end development tailored to the complex needs of modern businesses.',
+        image: '/assets/yodelt.png',
+        link: 'https://yodelt.com/',
+    },
+    {
+        language: 'Next.js, Typescript, Tailwind CSS, ShadCN, Tanstack Query, Paystack',
+        title: 'Hives',
+        description: 'Hives is an innovative EdTech Learning Management System (LMS) empowering African learners and professionals with accessible, high-quality digital education and career-ready skills.',
+        image: '/assets/hiveafrica.png',
+        link: 'https://www.hives.africa/',
+    },
           {
         language: 'Next Js, Typescript, Axios, Tanstack Query, Paystack, Shadcn, Tailwind CSS, ',
-        title: 'Hive Africa 2025',
+        title: 'Bootcamp 2025',
         description: 'Master data skills without pausing your career',
         image: '/assets/hiveafrica2025.svg',
         link: 'https://hiveafrica2025.vercel.app/',
@@ -76,11 +97,12 @@ export const CardData :CardDat[] =[
     link: 'https://coin-market-cap-ashen.vercel.app/',
     github: 'https://github.com/denovan6k/CoinMarketCap'
 },
-{
-    language: 'Next JS, Typescript, Zustand, Shadcn, Tailwind CSS, ',
-    title: 'Sabi Movie',
-    description: 'Discover the latest movies and trending titles on our sleek, user-friendly platform built with Next.js, TypeScript, and Zustand for seamless data management and performance. Explore, search, and stay updated with real-time information on all your favorite films.',
-    image: '/assets/movie.svg',
-    link: 'https://sabimovies.vercel.app/',
-    github: 'https://github.com/denovan6k/Movie_task'
-},]
+// {
+//     language: 'Next JS, Typescript, Zustand, Shadcn, Tailwind CSS, ',
+//     title: 'Sabi Movie',
+//     description: 'Discover the latest movies and trending titles on our sleek, user-friendly platform built with Next.js, TypeScript, and Zustand for seamless data management and performance. Explore, search, and stay updated with real-time information on all your favorite films.',
+//     image: '/assets/movie.svg',
+//     link: 'https://sabimovies.vercel.app/',
+//     github: 'https://github.com/denovan6k/Movie_task'
+// },
+]

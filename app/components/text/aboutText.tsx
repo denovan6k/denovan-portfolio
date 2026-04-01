@@ -22,7 +22,7 @@ const AboutText = () => {
         </div>
         <div className='rounded-2xl border border-[#2C2F36] bg-[#191B24] p-4 shadow-[6px_6px_0px_0px_rgba(199,120,221,0.16)]'>
           <p className='font-mono text-xs uppercase tracking-[0.32em] text-[#ABB2BF]'>based in</p>
-          <p className='pt-2 text-sm text-white'>Abuja, Nigeria • collaborating remotely worldwide.</p>
+          <p className='pt-2 text-sm text-white'>Montreal, Canada • collaborating remotely worldwide.</p>
         </div>
       </div>
     </div>

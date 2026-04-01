@@ -10,12 +10,12 @@ import { ScaleIn } from '@/app/components/animations/ScaleIn'
 
 export const metadata: Metadata = {
   title: 'About Me - Denovan | Designer-Engineer Crafting Digital Experiences',
-  description: 'Meet Ogundu Okechukwu (Denovan), a frontend engineer and product designer crafting expressive, neo-brutalist web experiences. 6+ years building design systems and immersive digital products.',
-  keywords: ['about Denovan', 'frontend engineer', 'product designer', 'web developer', 'UI/UX designer', 'design systems', 'React developer', 'Abuja Nigeria', 'remote developer'],
+  description: 'Meet Ogundu Okechukwu (Denovan), a frontend engineer and product designer crafting expressive experiences. 6+ years building design systems and immersive digital products.',
+  keywords: ['about Denovan', 'frontend engineer', 'product designer', 'web developer', 'UI/UX designer', 'design systems', 'React developer', 'Montreal Canada', 'remote developer'],
   authors: [{ name: 'Ogundu Okechukwu (Denovan)' }],
   openGraph: {
     title: 'About Denovan - Frontend Engineer & Product Designer',
-    description: 'Designer-engineer crafting expressive, neo-brutalist experiences that balance experimentation with dependable systems.',
+    description: 'Designer-engineer crafting expressive experiences that balance experimentation with dependable systems.',
     url: 'https://denovanport.vercel.app/about',
     siteName: 'Denovan Portfolio',
     images: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'About Denovan - Frontend Engineer & Product Designer',
-    description: 'Designer-engineer crafting expressive, neo-brutalist experiences that balance experimentation with dependable systems.',
+    description: 'Designer-engineer crafting expressive experiences that balance experimentation with dependable systems.',
     images: ['/assets/og-about.png'],
   },
   robots: {
@@ -53,7 +53,7 @@ const About = () => {
         <div className='relative z-10 flex flex-col gap-8 text-white'>
           <BreadCrumbs
             path='about me'
-            description='Designer-engineer crafting expressive, neo-brutalist experiences that balance experimentation with dependable systems.'
+            description='Designer-engineer crafting expressive experiences that balance experimentation with dependable systems.'
             eyebrow='biography'
           />
           <div className='grid gap-6 md:grid-cols-[1fr_auto] md:items-end'>

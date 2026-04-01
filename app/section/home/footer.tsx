@@ -38,7 +38,7 @@ const Footer = () => {
       </li>
     </ul>
     <div className='flex items-center justify-center py-8'>
-        <p className='text-[#ABB2BF]'> © Copyright 2024. Made by Denovan </p>
+        <p className='text-[#ABB2BF]'> © Copyright 2026. Made by Denovan </p>
     </div>
     </section>
     </>
