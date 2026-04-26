@@ -1,100 +1,65 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
-import MainLayout from "./components/MainLayout";
-import { Toaster } from "sonner";
-import { MotionConfig } from "./components/animations/MotionConfig";
-const firaCode = localFont({
-  src: "./fonts/FiraCode.ttf",
-  variable: "--font-fira-code",
-  weight: "100 900",
-})
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import type { Metadata } from "next"
+import { Geist, Geist_Mono } from "next/font/google"
+import { Analytics } from "@vercel/analytics/next"
+import { Toaster } from "sonner"
+import "./globals.css"
+
+const _geist = Geist({ subsets: ["latin"] })
+const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://denovanport.vercel.app'),
-  title: {
-    default: 'Denovan - Frontend Engineer & Product Designer',
-    template: '%s | Denovan'
-  },
-  description: "Translating Design problems into high impact applications. Frontend engineer and product designer crafting expressive, neo-brutalist web experiences.",
-  keywords: ['Denovan', 'Ogundu Okechukwu', 'frontend engineer', 'product designer', 'web developer', 'UI/UX', 'React', 'Next.js', 'TypeScript', 'design systems', 'Abuja Nigeria'],
-  authors: [{ name: 'Ogundu Okechukwu (Denovan)', url: 'https://denovanport.vercel.app' }],
-  creator: 'Ogundu Okechukwu (Denovan)',
-  publisher: 'Denovan',
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  icons: {
-    icon: "/assets/logo.svg",
-    shortcut: "/assets/logo.svg",
-    apple: "/assets/logo.svg",
-  },
-  manifest: '/manifest.json',
+  title: "Denovan - AI Engineer & Software Engineer | Agentic Web Experiences",
+  description:
+    "Ogundu Okechukwu (Denovan) — Frontend Engineer & Product Designer crafting expressive web products that live between experimental aesthetics and obsessive usability.",
+  keywords: [
+    "Frontend Engineer",
+    "Product Designer",
+    "Next.js",
+    "TypeScript",
+    "React",
+    "UI/UX",
+    "Denovan",
+    "Ogundu Okechukwu",
+  ],
+  authors: [{ name: "Ogundu Okechukwu", url: "https://denovan.dev" }],
+  creator: "@denovan6k",
   openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://denovanport.vercel.app',
-    siteName: 'Denovan Portfolio',
-    title: 'Denovan - Frontend Engineer & Product Designer',
-    description: 'Building distinctive web worlds for future-facing brands.',
-    images: [
-      {
-        url: '/assets/og-home.png',
-        width: 1200,
-        height: 630,
-        alt: 'Denovan Portfolio',
-      },
-    ],
+    title: "Denovan - AI Engineer & Software Engineer | Agentic Web Experiences",
+    description:
+      "Crafting expressive web products that live between experimental aesthetics and obsessive usability.",
+    type: "website",
+    images: ["/assets/og-home.png"],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Denovan - Frontend Engineer & Product Designer',
-    description: 'Building distinctive web worlds for future-facing brands.',
-    creator: '@denovan6k',
-    images: ['/assets/og-home.png'],
+    card: "summary_large_image",
+    title: "Denovan - AI Engineer & Software Engineer",
+    description:
+      "Crafting expressive web products that live between experimental aesthetics and obsessive usability.",
+    creator: "@denovan6k",
+    images: ["/assets/og-home.png"],
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
+  icons: {
+    icon: [
+      { url: "/icon-light-32x32.png", media: "(prefers-color-scheme: light)" },
+      { url: "/icon-dark-32x32.png", media: "(prefers-color-scheme: dark)" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-icon.png",
   },
-};
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${firaCode.variable} antialiased bg-[#282C33]`}
-      >
-        <MotionConfig>
-          <MainLayout>
-            {children}
-          </MainLayout>
-          <Toaster/>
-        </MotionConfig>
+      <body className="font-sans antialiased bg-black text-white">
+        {children}
+        <Toaster richColors position="top-right" />
+        {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
-  );
+  )
 }

@@ -1,0 +1,88 @@
+// app/globals.css
+/* Cursor defaults and interactive states */
+html, body {
+cursor: default;
+}
+/* Ensure expected cursors for interactivity and inputs */
+a, button, [role="button"], input[type="button"], input[type="submit"] {
+cursor: pointer;
+}
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+textarea,
+select {
+cursor: text;
+}
+/* Optional: show 'grab' for draggable elements if used */
+[draggable="true"], .is-draggable {
+cursor: grab;
+}
+.is-dragging {
+cursor: grabbing;
+}
+
+// components/custom-cursor.tsx
+"use client"
+
+import { useEffect, useState } from "react"
+
+export default function CustomCursor() {
+const [pos, setPos] = useState({ x: 0, y: 0 })
+const [active, setActive] = useState(false)
+
+// Don't render on touch devices
+if (typeof navigator !== "undefined" && navigator.maxTouchPoints > 0) {
+  return null
+}
+
+useEffect(() => {
+  const onMove = (e: MouseEvent) => {
+    setPos({ x: e.clientX, y: e.clientY })
+  }
+  const onDown = () => setActive(true)
+  const onUp = () => setActive(false)
+
+  // Slightly intensify aura over interactive elements
+  const onOver = (e: MouseEvent) => {
+    const target = e.target as HTMLElement | null
+    const isInteractive = !!target?.closest("a, button, [role='button'], input, select, textarea")
+    setActive(isInteractive)
+  }
+
+  window.addEventListener("mousemove", onMove)
+  window.addEventListener("mousedown", onDown)
+  window.addEventListener("mouseup", onUp)
+  window.addEventListener("mouseover", onOver)
+
+  return () => {
+    window.removeEventListener("mousemove", onMove)
+    window.removeEventListener("mousedown", onDown)
+    window.removeEventListener("mouseup", onUp)
+    window.removeEventListener("mouseover", onOver)
+  }
+}, [])
+
+return (
+  <div className="fixed inset-0 z-50 pointer-events-none">
+    {/* Neon aura (subtle, does not replace system cursor) */}
+    <div
+      aria-hidden="true"
+      className={`fixed rounded-full transition-all duration-150 ease-out
+        bg-cyan-400/10 blur-2xl mix-blend-screen
+      `}
+      style={{
+        left: `${pos.x}px`,
+        top: `${pos.y}px`,
+        width: active ? "220px" : "160px",
+        height: active ? "220px" : "160px",
+        transform: "translate(-50%, -50%)",
+        boxShadow: active
+          ? "0 0 60px rgba(34,211,238,0.55), 0 0 120px rgba(168,85,247,0.35)"
+          : "0 0 40px rgba(34,211,238,0.35)",
+      }}
+    />
+  </div>
+)
+}
